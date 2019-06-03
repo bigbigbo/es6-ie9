@@ -1,0 +1,22 @@
+{
+  "name": "es6-ie9",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "not ie <= 8"
+  ]
+}
