@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "babel src -d lib"
+    "build": "rimraf lib && babel src -d lib"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4"
@@ -12,7 +12,8 @@
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5"
+    "@babel/preset-env": "^7.4.5",
+    "rimraf": "^2.6.3"
   },
   "browserslist": [
     "last 2 versions",
