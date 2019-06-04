@@ -4,10 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf lib && babel src -d lib"
+    "build": "rimraf lib && babel src -d lib && node scripts/generate-html"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.4.4"
+    "@babel/polyfill": "^7.4.4",
+    "art-template": "^4.13.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
